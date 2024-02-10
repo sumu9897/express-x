@@ -17,5 +17,11 @@ app.use(hpp())
 const  limiter=rateLimit({windowMs:15*60*100, max:3000})
 
 app.use(limiter);
+app.use(cookie())
 
 //Disable Response Cache
+app.set('etag',false);
+
+//Request Size Limit
+app.use(express.json({limit:'20MB'}))
+
