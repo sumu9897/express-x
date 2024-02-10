@@ -24,4 +24,10 @@ app.set('etag',false);
 
 //Request Size Limit
 app.use(express.json({limit:'20MB'}))
+app.use(express.urlencoded({limit:false}))
+
+//Database Connection
+mongoose.connect("",{autoIndex:true})
+
+//API Route Connect
 
