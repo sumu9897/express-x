@@ -6,7 +6,7 @@ import helmet from "helmet";
 import hpp from 'hpp'
 import cors from 'cors'
 import {cookie} from "cookie-parser";
-
+import router from "./src/routes/api";
 const app=express();
 
 //Middleware
@@ -30,4 +30,5 @@ app.use(express.urlencoded({limit:false}))
 mongoose.connect("",{autoIndex:true})
 
 //API Route Connect
+app.use("/api",router)
 
