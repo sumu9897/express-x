@@ -70,6 +70,18 @@ To use this application, follow these steps:
     ```
 
     - **cookie-parser**: Cookie-parser is a middleware for Express that parses cookies attached to the client's request object and populates the `req.cookies` object with the parsed cookies.
+   ```bash
+    npm i hpp
+    ```
+
+   - **hpp**: HPP (HTTP Parameter Pollution) is an Express middleware to prevent parameter pollution attacks by removing duplicate parameters and keeping the last value.
+
+    ```bash
+    npm i helmet
+    ```
+
+   - **helmet**: Helmet is a collection of middleware to help secure Express apps by setting various HTTP headers. It helps prevent common web vulnerabilities such as XSS, CSRF, and others.
+
 
 ## Usage
 
